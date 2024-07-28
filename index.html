@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung - Official Site</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .cart-section {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -45,116 +50,55 @@
         <h2>Our Latest Products</h2>
         <div class="grid-container">
             <!-- Product cards go here -->
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Samsung - Official Site</title>
-                <link rel="stylesheet" href="styles.css">
-            </head>
-            <body>
-                <!-- Header -->
-                <header>
-                    <div class="logo">
-                        <img src="images/logo.jpg" alt="Samsung Logo">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#products">Products</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#help">Help</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header-right">
-                        <a href="login.html" class="login-button">Login</a>
-                        <button class="cart-button">
-                            Cart <span class="cart-count">0</span>
-                        </button>
-                    </div>
-                </header>
-            
-                <!-- Hero Section -->
-                <section class="hero" id="home">
-                    <div class="hero-text">
-                        <h1>Samsung Galaxy S21 FE</h1>
-                        <p>Experience the epic. 5G speed and advanced camera technology.</p>
-                        <a href="#products" class="btn">Shop Now</a>
-                    </div>
-                    <div class="hero-image">
-                        <img src="images/Samsung Galaxy S21.webp" alt="Samsung Galaxy S21">
-                    </div>
-                </section>
-            
-                <!-- Product Grid -->
-                <section class="product-grid" id="products">
-                    <h2>Our Latest Products</h2>
-                    <div class="grid-container">
-                        <!-- Product cards go here -->
-                    </div>
-                </section>
-            
-                <!-- About Samsung Section -->
-                <section class="about" id="about">
-                    <h2>About Samsung</h2>
-                    <p>Samsung Electronics is a global leader in technology, opening new possibilities for people everywhere. Through relentless innovation and discovery, we are transforming the worlds of TVs, smartphones, wearable devices, tablets, digital appliances, network systems, and memory, system LSI, foundry and LED solutions. We employ more than 200,000 people across the globe. To discover more, please visit our official website.Samsung is committed to complying with local laws and regulations as well as applying a strict global code of conduct to all employees. It believes that ethical management is not only a tool for responding to the rapid changes in the global business environment, but also a vehicle for building trust with its various stakeholders including customers, shareholders, employees, business partners and local communities. With an aim to become one of the most ethical companies In the world, Samsung continues to train its employees and operate monitoring systems, while practicing fair and transparent corporate management.</p>
-                </section>
-            
-                <!-- Help Section -->
-                <section class="help" id="help">
-                    <h2>Help & Support</h2>
-                    <form id="help-form">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                        <button type="submit" class="btn">Submit</button>
-                    </form>
-                </section>
-            
-                <!-- Cart Section -->
-                <div class="cart-section">
-                    <h2>Shopping Cart</h2>
-                    <div class="cart-items"></div>
-                    <div class="cart-summary">
-                        <p class="total-cost">Total Cost: ₹0.00</p>
-                        <p class="discount">Discount: ₹0.00</p>
-                    </div>
-                    <button class="back-button">Back to Shopping</button>
-                    <button class="checkout-button">Checkout</button>
-                </div>
-                
-                <!-- Checkout Section -->
-                <div class="checkout-section">
-                    <h2>Checkout</h2>
-                    <div class="checkout-items"></div>
-                    <div class="checkout-summary">
-                        <p class="total-cost">Total Cost: ₹0.00</p>
-                        <p class="discount">Discount: ₹0.00</p>
-                        <button class="place-order-button">Place Order</button>
-                        <button class="back-to-cart-button">Back to Cart</button>
-                    </div>
-                </div>
-            
-                <!-- Footer -->
-                <footer>
-                    <p>&copy; 2024 Samsung Electronics. All rights reserved.</p>
-                </footer>
-            
-                <script src="scripts.js"></script>
-            </body>
-            </html>
-            
+            <div class="product-card" data-product-id="1">
+                <img src="D:\new clone\images\Samsung Galaxy Z Fold4.webp" alt="Samsung Galaxy Z Fold4">
+                <h3>Samsung Galaxy Z Fold4</h3>
+                <p>₹1,34,245</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="2">
+                <img src="D:\new clone\images\Samsung Galaxy S23 Ultra.webp" alt="Samsung Galaxy S23 Ultra">
+                <h3>Samsung Galaxy S23 Ultra</h3>
+                <p>₹89,345</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="3">
+                <img src="D:\new clone\images\Samsung Galaxy S23+.webp" alt="Samsung Galaxy S23+">
+                <h3>Samsung Galaxy S23+</h3>
+                <p>₹74,495</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="4">
+                <img src="D:\new clone\images\Samsung Galaxy S23.webp" alt="Samsung Galaxy S23">
+                <h3>Samsung Galaxy S23</h3>
+                <p>₹59,595</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="5">
+                <img src="D:\new clone\images\Galaxy Book4 Pro.webp" alt="Galaxy Book4 Pro">
+                <h3>Galaxy Book4 Pro</h3>
+                <p>₹96,795</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="6">
+                <img src="D:\new clone\images\Galaxy Watch Ultra.jpg" alt="Galaxy Watch Ultra">
+                <h3>Galaxy Watch Ultra</h3>
+                <p>₹37,245</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="7">
+                <img src="D:\new clone\images\Samsung Tab S9.webp" alt="Samsung Tab S9">
+                <h3>Samsung Tab S9</h3>
+                <p>₹74,495</p>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
         </div>
     </section>
 
     <!-- About Samsung Section -->
     <section class="about" id="about">
         <h2>About Samsung</h2>
-        <p>Samsung Electronics is a global leader in technology, opening new possibilities for people everywhere. Through relentless innovation and discovery, we are transforming the worlds of TVs, smartphones, wearable devices, tablets, digital appliances, network systems, and memory, system LSI, foundry and LED solutions. We employ more than 200,000 people across the globe. To discover more, please visit our official website.Samsung is committed to complying with local laws and regulations as well as applying a strict global code of conduct to all employees. It believes that ethical management is not only a tool for responding to the rapid changes in the global business environment, but also a vehicle for building trust with its various stakeholders including customers, shareholders, employees, business partners and local communities. With an aim to become one of the most ethical companies In the world, Samsung continues to train its employees and operate monitoring systems, while practicing fair and transparent corporate management.</p>
+        <p>Samsung Electronics is a global leader in technology, opening new possibilities for people everywhere. Through relentless innovation and discovery, we are transforming the worlds of TVs, smartphones, wearable devices, tablets, digital appliances, network systems, and memory, system LSI, foundry and LED solutions. We employ more than 200,000 people across the globe. To discover more, please visit our official website. Samsung is committed to complying with local laws and regulations as well as applying a strict global code of conduct to all employees. It believes that ethical management is not only a tool for responding to the rapid changes in the global business environment, but also a vehicle for building trust with its various stakeholders including customers, shareholders, employees, business partners and local communities. With an aim to become one of the most ethical companies in the world, Samsung continues to train its employees and operate monitoring systems, while practicing fair and transparent corporate management.</p>
     </section>
 
     <!-- Help Section -->
