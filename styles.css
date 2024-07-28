@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Header styles */
 header {
     position: sticky;
     top: 0;
@@ -47,13 +47,14 @@ nav ul li a {
 }
 
 .header-right .login-button,
-.header-right .cart-button,
-.header-right .view-cart-button {
+.header-right .cart-button {
     background: none;
     border: none;
     color: #fff;
     margin-left: 20px;
     cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .cart-count {
@@ -62,7 +63,7 @@ nav ul li a {
     padding: 0 5px;
 }
 
-/* Hero Section */
+/* Hero section */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -72,15 +73,28 @@ nav ul li a {
 }
 
 .hero-text {
-    max-width: 500px;
+    max-width: 50%;
 }
 
 .hero-text h1 {
+    font-size: 2.5em;
     margin-bottom: 1rem;
 }
 
 .hero-text p {
-    margin-bottom: 2rem;
+    font-size: 1.1em;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
 .hero-image img {
@@ -88,7 +102,7 @@ nav ul li a {
     height: auto;
 }
 
-/* Product Grid */
+/* Product grid */
 .product-grid {
     padding: 2rem;
     background: #fff;
@@ -100,17 +114,21 @@ nav ul li a {
 }
 
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .product-card {
-    flex: 1 1 calc(33.333% - 2rem);
-    margin-bottom: 2rem;
-    background: #f4f4f4;
-    padding: 1rem;
+    border: 1px solid #ddd;
+    padding: 20px;
     text-align: center;
+    background: #f4f4f4;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
 }
 
 .product-card img {
@@ -119,119 +137,120 @@ nav ul li a {
 }
 
 .product-card h3 {
-    margin: 1rem 0;
+    margin: 10px 0;
 }
 
 .product-card p {
-    margin: 1rem 0;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
-.product-card .btn {
-    background-color: #000;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.product-card .btn:hover {
-    background-color: #333;
-}
-
-/* About Section */
-.about {
+/* Login section */
+.login-section {
     padding: 2rem;
-    background: #f4f4f4;
-    text-align: center;
+    background: #fff;
 }
 
-.about h2 {
+.login-section h2 {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
-/* Help Section */
+#login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#login-form .btn {
+    width: 100%;
+    padding: 0.75rem;
+}
+
+/* About section */
+.about {
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Help section */
 .help {
     padding: 2rem;
     background: #fff;
-    text-align: center;
 }
 
 .help h2 {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
 #help-form {
-    display: flex;
-    flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
 }
 
 #help-form label {
+    display: block;
     margin-bottom: 0.5rem;
 }
 
 #help-form input,
 #help-form textarea {
+    width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
 }
 
-#help-form button {
-    background-color: #000;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
+#help-form .btn {
+    width: 100%;
+    padding: 0.75rem;
 }
 
-#help-form button:hover {
-    background-color: #333;
-}
-
-/* Cart Section */
-.cart-section {
+/* Cart and checkout sections */
+.cart-section,
+.checkout-section {
     display: none;
     padding: 2rem;
     background: #fff;
 }
 
-.cart-section h2 {
+.cart-section h2,
+.checkout-section h2 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.cart-items {
-    margin-bottom: 2rem;
-}
-
-.cart-item {
+.cart-item,
+.checkout-item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-.cart-summary {
+.cart-summary,
+.checkout-summary {
     text-align: center;
-}
-
-.cart-summary p {
-    margin: 1rem 0;
-}
-
-.back-button {
-    display: block;
-    margin: 0 auto;
-    background-color: #000;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.back-button:hover {
-    background-color: #333;
 }
 
 /* Footer */
